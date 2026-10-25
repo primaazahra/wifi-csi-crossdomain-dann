@@ -3,7 +3,7 @@
   1. Prima Azahra       — NIM: 2411511005
   2. Shahida Shintya    — NIM: 2411511007
   3. Zega Vibiano Delta — NIM: 2411511009
-  4. Fathia Muhammad Martha - NIM: 221151
+  4. Fathia Muhammad Martha - NIM: 2211513057
 
 ---
 ## Struktur Direktori Proyek
