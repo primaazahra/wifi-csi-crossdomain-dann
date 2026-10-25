@@ -3,7 +3,7 @@
   1. Prima Azahra       — NIM: 2411511005
   2. Shahida Shintya    — NIM: 2411511007
   3. Zega Vibiano Delta — NIM: 2411511009
-  4. Fathia Muhammad Martha - NIM: 2211513057
+  4. Fathia Muhammad Marta - NIM: 2211513057
 
 ---
 ## Struktur Direktori Proyek
@@ -76,5 +76,7 @@ Visualisasi t-SNE menunjukkan perbandingan sebaran fitur antar domain:
 a) Baseline CNN-LSTM: Terdapat pemisahan (clustering gap) yang cukup berjarak antara data Source dan Target, mengindikasikan adanya pergeseran domain.           
 b) DANN (Domain-Adversarial Neural Network): Distribusi fitur Source dan Target saling berhimpit (overlap), membuktikan bahwa gradient reversal layer (GRL) berhasil menyelaraskan ruang fitur domain secara simultan.
 
+Link Folder Project_UTS_BVP:
+https://drive.google.com/drive/folders/1JFqYp2Z7p_u-yPVbZMa9uJIsQ4kuwaSI?usp=sharing
 
 
