@@ -23,19 +23,25 @@ Proyek ini dijalankan pada lingkungan Google Colab dengan runtime Python 3.x dan
 5. matplotlib & seaborn (Visualisasi data & grafik)
 
 ### Panduan Eksekusi Program
-- Persiapan Google Drive & Environment, pertama pastikan folder proyek telah diunggah ke Google Drive pada path:/content/drive/MyDrive/Project_UTS_BPV, lalu pastikan struktur folder BVP dan splits berada di dalam direktori utama proyek.
+A. Persiapan Google Drive & Struktur Direktori
+* Unggah folder utama proyek ke Google Drive pada path berikut:
+  `/content/drive/MyDrive/Project_UTS_BPV/`
+* Pastikan di dalam folder tersebut sudah terdapat dua folder utama:
+  * `BVP/` : Berisi kumpulan file `.mat` data mentah fisiologis per user.
+  * `splits/` : Berisi file CSV indeks pembagian data latih dan uji (`src_tr.csv`, `src_va.csv`, `tgt_tr.csv`, `tgt_te.csv`).
 
-- Menjalankan Model & Evaluasi t-SNE
-Jalankan sel eksekusi t-SNE berikut di Notebook 4 untuk mengekstraksi fitur laten dan memvisualisasikan domain adaptation:
-import os
-import torch
-import numpy as np
-import matplotlib.pyplot as plt
-from sklearn.manifold import TSNE
-from google.colab import drive
-
-### 1. Mount Google Drive
-drive.mount('/content/drive', exist_ok=True)
+B. Eksekusi Notebook Secara Berurutan
+Jalankan sel kode di dalam notebook secara berurutan
+### 1. Mount Google Drive & Inisialisasi Path:
+Sel pertama wajib menghubungkan Google Drive dan menetapkan direktori kerja utama: Menjalankan Model & Evaluasi t-SNE.
+Jalankan sel eksekusi t-SNE berikut di Notebook 4 untuk mengekstraksi fitur laten dan memvisualisasikan domain adaptation: 
+   from google.colab import drive
+   drive.mount('/content/drive')
+   
+   import os
+   BASE_DIR = '/content/drive/MyDrive/Project_UTS_BPV'
+   RESULTS = os.path.join(BASE_DIR, 'results')
+   os.makedirs(RESULTS, exist_ok=True)
 
 ### 2. Setup Path Utama
 BASE_DIR = '/content/drive/MyDrive/Project_UTS_BPV'             
